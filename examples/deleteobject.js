@@ -1,4 +1,4 @@
-import { S3Client, DeleteObjectCommand } from '../mod.ts';
+import { S3Client, GetObjectCommand, readableStreamToUint8Array } from "https://deno.land/x/greenant_aws_s3_client@v0.0.2/mod.ts";
 
 const client = new S3Client({
 	region: '',
